@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>908669592115-au2ihakb15dj5rtim9ft0kq1cmb5soh1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.908669592115-au2ihakb15dj5rtim9ft0kq1cmb5soh1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBzJ0AKKpB9QM6OE3UQPahg1Oti_dZeC3Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>908669592115</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.parsajabbari.Flash-Chat-iOS13</string>
+	<key>PROJECT_ID</key>
+	<string>flash-chat-parsa</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flash-chat-parsa.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:908669592115:ios:69834213c3fa83ce56b946</string>
+	<key>DATABASE_URL</key>
+	<string>https://flash-chat-parsa.firebaseio.com</string>
+</dict>
+</plist>

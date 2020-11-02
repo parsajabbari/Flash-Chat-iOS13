@@ -11,8 +11,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = ""
-        
+                
         let title = "⚡️FlashChat"
         var index: Double = 0
         for letter in title {
@@ -21,7 +20,7 @@ class WelcomeViewController: UIViewController {
             }
             index += 1
         }
-       
+
     }
     
 

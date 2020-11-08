@@ -5,11 +5,14 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
 
 class ChatViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
+    
+    let db = Firestore.firestore()
     
     var messages: [Message] = [
         Message(sender: "parsajabbari@gmail.com", body: "Hey! This is the story all about how my life got flipped right upside down and i'd liek to take a minute just sit right there i'll tell you how i became the princeo of a town called belair"),
@@ -26,6 +29,15 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
+        if let messageBody = messageTextfield.text, let messageSender = Auth.auth().currentUser?.email {
+            db.collection(K.FStore.collectionName).addDocument(data: [K.FStore.senderField: messageSender, K.FStore.bodyField: messageBody]) { (error) in
+                if let e = error {
+                    print(e)
+                } else {
+                    print("Successfully added record to Firestore!")
+                }
+            }
+        }
     }
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {

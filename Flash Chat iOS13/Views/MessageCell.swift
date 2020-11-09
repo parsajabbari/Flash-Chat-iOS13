@@ -11,11 +11,12 @@ import UIKit
 class MessageCell: UITableViewCell {
     @IBOutlet weak var messageBubble: UIView!
     @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var MeAvatar: UIImageView!
+    @IBOutlet weak var meAvatar: UIImageView!
+    @IBOutlet weak var youAvatar: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        messageBubble.layer.cornerRadius = messageLabel.frame.size.height / 5
+        messageBubble.layer.cornerRadius = 20 //messageLabel.frame.size.height / 2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
